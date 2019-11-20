@@ -1,6 +1,7 @@
 package com.briup.apps.cms.bean.extend;
 
 import com.briup.apps.cms.bean.Article;
+import com.briup.apps.cms.bean.BaseUser;
 import com.briup.apps.cms.bean.Category;
 import com.briup.apps.cms.bean.Comment;
 
@@ -21,7 +22,7 @@ public class ArticleExtend extends Article {
 
     private Category category;
     private List<Comment> comments;
-    private User author;
+    private BaseUser author;
 
     public Category getCategory() {
         return category;
@@ -39,11 +40,11 @@ public class ArticleExtend extends Article {
         this.comments = comments;
     }
 
-    public User getAuthor() {
+    public BaseUser getAuthor() {
         return author;
     }
 
-    public void setAuthor(User author) {
+    public void setAuthor(BaseUser author) {
         this.author = author;
     }
 

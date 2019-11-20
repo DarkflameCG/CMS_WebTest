@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author GX Cui
+ * @author GX CuiO
  * @ClassName: ArticleServiceImpl
  * @Description: Article表的业务逻辑实现层
  * @date 2019/11/13 16:55

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.apps.cms.dao.extend.CategoryExtendMapper">
+  <resultMap id="CategoryExtendResult"
+             type="com.briup.apps.cms.bean.extend.CategoryExtend"
+             extends="com.briup.apps.cms.dao.CategoryMapper.BaseResultMap">
+    <association property="parentCategory"
+                 column="parent_id"
+                 select="com.briup.apps.cms.dao.CategoryMapper.selectByPrimaryKey">
+    </association>
+  </resultMap>
+
+  <select id="cascadeFindAllCategory" resultMap="CategoryExtendResult">
+    SELECT  *
+    FROM C_CATEGORY
+  </select>
+
+</mapper>
